@@ -10,14 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class LoginController {
-	private static final Logger mLogger = LoggerFactory.getLogger(LoginController.class);
+public class ScrolltableController {
+	private static final Logger mLogger = LoggerFactory.getLogger(ScrolltableController.class);
 
-	@RequestMapping(value = { "", "/" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/scrolltable" }, method = RequestMethod.GET)
 	public String index(HttpServletRequest request, HttpSession session) {
-		mLogger.debug("LoginController.index");
-
-		return "index";
+		mLogger.debug("ScrolltableController.index");
+		return "scrolltable";
 	}
 
 }

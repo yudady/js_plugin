@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR">
+
+	<Properties>
+		<Property name="log-path">/AP/jboss-eap-6.4/standalone/log</Property>
+	</Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>%d{HH:mm:ss,SSS} %-5level: %c{1}: - %msg%n</pattern>
+			</PatternLayout>
+		</Console>
+
+	</Appenders>
+	<Loggers>
+		<Logger name="com" level="TRACE" additivity="false">
+			<appender-ref ref="Console" level="debug" />
+		</Logger>
+		<Logger name="org" level="TRACE" additivity="false">
+			<appender-ref ref="Console" level="debug" />
+		</Logger>
+
+		<Root level="ERROR" additivity="false">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+
+
+
+</Configuration>
+

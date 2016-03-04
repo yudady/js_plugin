@@ -9,6 +9,8 @@
 <head>
 <title><decorator:title default="javascript" /></title>
 <decorator:head />
+<script type="text/javascript" src="<s:url value="/resources/plugin/log/jquery.log.js" /> "></script>
+
 </head>
 <body>
 	<header>

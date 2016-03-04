@@ -20,5 +20,9 @@
 		Alert => <a href='<s:url value="/sweetAlert2" />'>sweetAlert2</a>
 		<hr>
 	</div>
+	<div>
+		select2 => <a href='<s:url value="/select2" />'>select2</a>
+		<hr>
+	</div>
 </body>
 </html>

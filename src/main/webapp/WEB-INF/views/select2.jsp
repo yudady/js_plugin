@@ -7,7 +7,7 @@
 <head>
 <title>SweetAlert2</title>
 <script type="text/javascript" src="<s:url value="/resources/plugin/jquery/jquery.1.8.0.min.js" /> "></script>
-
+<script type="text/javascript" src="<s:url value="/resources/plugin/log/jquery.log.js" /> "></script>
 <!-- This is what you need -->
 <script type="text/javascript" src="<s:url value="/resources/plugin/select2/select2-4.0.2/dist/js/select2.full.min.js" /> "></script>
 <link rel="stylesheet" href="<s:url value="/resources/plugin/select2/select2-4.0.2/dist/css/select2.min.css" /> " type="text/css" />

@@ -24,5 +24,9 @@
 		select2 => <a href='<s:url value="/select2" />'>select2</a>
 		<hr>
 	</div>
+	<div>
+		tooltip => <a href='<s:url value="/poshytip" />'>poshytip</a>
+		<hr>
+	</div>
 </body>
 </html>

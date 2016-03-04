@@ -1,4 +1,4 @@
-package com.foya.base.controller;
+package com.foya.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;

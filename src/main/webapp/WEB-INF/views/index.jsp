@@ -12,5 +12,9 @@
 		table auto scroll bar => <a href='<s:url value="/scrolltable" />'>scrolltable</a>
 		<hr>
 	</div>
+	<div>
+		menu tree => <a href='<s:url value="/jstree" />'>jstree</a>
+		<hr>
+	</div>
 </body>
 </html>

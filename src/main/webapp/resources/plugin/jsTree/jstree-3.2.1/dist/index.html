@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jstree basic demos</title>
+<style>
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+}
+
+body {
+	max-width: 800px;
+	min-width: 100px;
+	margin: 0 auto;
+	padding: 20px 10px;
+	font-size: 14px;
+	font-size: 1.4em;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+.demo {
+	overflow: auto;
+	border: 1px solid silver;
+	min-height: 100px;
+}
+</style>
+<link rel="stylesheet" href="./themes/default/style.min.css" />
+<script src="./jquery.min.js"></script>
+<script src="./jstree.min.js"></script>
+<script src="./jstree.conditionalselect.js"></script>
+<script src="./jstree.wholerow.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+
+
+		//-----------------------------------
+		var arrayCollection = [ {
+			"id" : "animal",
+			"parent" : "#",
+			"text" : "Animals"
+		}, {
+			"id" : "device",
+			"parent" : "#",
+			"text" : "Devices"
+		}, {
+			"id" : "dog",
+			"parent" : "animal",
+			"text" : "Dogs"
+		}, {
+			"id" : "lion",
+			"parent" : "animal",
+			"text" : "Lions"
+		}, {
+			"id" : "mobile",
+			"parent" : "device",
+			"text" : "Mobile Phones"
+		}, {
+			"id" : "lappy",
+			"parent" : "device",
+			"text" : "Laptops"
+		}, {
+			"id" : "daburman",
+			"parent" : "dog",
+			"text" : "Dabur Man",
+			"icon" : "/"
+		}, {
+			"id" : "Dalmation",
+			"parent" : "dog",
+			"text" : "Dalmatian",
+			"icon" : "/"
+		}, {
+			"id" : "african",
+			"parent" : "lion",
+			"text" : "African Lion",
+			"icon" : "/"
+		}, {
+			"id" : "indian",
+			"parent" : "lion",
+			"text" : "Indian Lion",
+			"icon" : "/"
+		}, {
+			"id" : "apple",
+			"parent" : "mobile",
+			"text" : "Apple IPhone 6",
+			"icon" : "/"
+		}, {
+			"id" : "samsung",
+			"parent" : "mobile",
+			"text" : "Samsung Note II",
+			"icon" : "/"
+		}, {
+			"id" : "lenevo",
+			"parent" : "lappy",
+			"text" : "Lenevo",
+			"icon" : "/"
+		}, {
+			"id" : "hp",
+			"parent" : "lappy",
+			"text" : "HP",
+			"icon" : "/"
+		} ];
+		$('#jstree').jstree({
+			'conditionalselect' : function (node) {
+			    //return <something that determines condition> ? true : false;
+			    console.log(node.id);
+				return true;
+			 },
+			 'state' : { "id" : "samsung" },
+			'plugins' : ['conditionalselect' , 'wholerow' , 'state' ],
+			'core' : {
+				'data' : arrayCollection
+			}
+		});
+	});
+</script>
+</head>
+<body>
+
+
+	<div id="jstree"></div>
+
+
+</body>
+</html>

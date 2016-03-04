@@ -26,7 +26,7 @@ public class JsTreeController {
 
 	@RequestMapping(value = { "/jstree" }, method = RequestMethod.GET)
 	public String index(HttpServletRequest request, HttpSession session) {
-		mLogger.debug("ScrolltableController.index");
+		mLogger.debug("JsTreeController.index");
 		return "jstree";
 	}
 
@@ -34,7 +34,7 @@ public class JsTreeController {
 	@RequestMapping(value = { "/jstree/data" }, method = RequestMethod.GET)
 	@ResponseBody
 	public Set<NavItem> data(HttpServletRequest request, HttpSession session) {
-		mLogger.debug("NavController.nav");
+		mLogger.debug("JsTreeController.data");
 		Set<NavItem> trees = navServiceDemo.getNav();
 
 		return trees;

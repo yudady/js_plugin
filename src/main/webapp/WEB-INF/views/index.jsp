@@ -16,5 +16,9 @@
 		menu tree => <a href='<s:url value="/jstree" />'>jstree</a>
 		<hr>
 	</div>
+	<div>
+		Alert => <a href='<s:url value="/sweetAlert2" />'>sweetAlert2</a>
+		<hr>
+	</div>
 </body>
 </html>

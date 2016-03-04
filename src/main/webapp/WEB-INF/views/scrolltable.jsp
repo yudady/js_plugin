@@ -8,13 +8,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>jQuery Scroll Table</title>
 
-<link rel="stylesheet" href="<s:url value="/resources/plugin/jquery-ui-1.11.4/jquery-ui.theme.min.css" /> " type="text/css" />
+
+<link rel="stylesheet" href="<s:url value="/resources/plugin/jquery-ui/jquery-ui-1.11.4/jquery-ui.theme.min.css" /> " type="text/css" />
 
 
-
-<script type="text/javascript" src="<s:url value="/resources/plugin/jquery.1.8.0.min.js" /> "></script>
-<script type="text/javascript" src="<s:url value="/resources/plugin/jquery-ui-1.11.4/jquery-ui.min.js" /> "></script>
-<script type="text/javascript" src="<s:url value="/resources/plugin/jquery-scrolltable/jquery.scrolltable.js" /> "></script>
+<script type="text/javascript" src="<s:url value="/resources/plugin/jquery/jquery.1.8.0.min.js" /> "></script>
+<script type="text/javascript" src="<s:url value="/resources/plugin/jquery-ui/jquery-ui-1.11.4/jquery-ui.min.js" /> "></script>
+<script type="text/javascript" src="<s:url value="/resources/plugin/jquery-scrolltable/jquery-scrolltable-0.5.2/jquery.scrolltable.js" /> "></script>
 
 
 

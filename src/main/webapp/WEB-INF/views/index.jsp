@@ -28,5 +28,14 @@
 		tooltip => <a href='<s:url value="/poshytip" />'>poshytip</a>
 		<hr>
 	</div>
+	<div>
+		Scroll To => <a href='<s:url value="/pageScroll2Id" />'>pageScroll2Id</a>
+		<hr>
+	</div>
+
+
+
+
+
 </body>
 </html>
